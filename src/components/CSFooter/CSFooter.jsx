@@ -1,9 +1,4 @@
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import NavBar from 'react-bootstrap/NavBar'
-import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
-import Stack from 'react-bootstrap/Stack'
 import logo from '/bufflogo.png'
 import styles from './CSFooter.module.css'
 
