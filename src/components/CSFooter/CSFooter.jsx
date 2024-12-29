@@ -6,7 +6,7 @@ const CSFooter = () => {
     return (
         <>
             <Row>
-                <div className="d-flex align-items-end justify-content-between w-100">
+                <div className="d-flex align-items-center justify-content-between pe-4 w-100">
                     <div>
                         <a href="#">
                             <img src={logo} alt="paydev logo" height="75" className="my-0 py-0"/>
