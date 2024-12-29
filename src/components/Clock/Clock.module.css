@@ -1,0 +1,20 @@
+.clockWrap {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+}
+
+#hour, #min {
+  stroke: var(--sp-med-gray);
+}
+
+#sec {
+  stroke: var(--sp-green);
+  filter: url(#shadow);
+}
+
+#sec:hover {
+  stroke: var(--fface-red) !important;
+  filter: url(#hover-shadow);
+}

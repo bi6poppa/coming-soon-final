@@ -1,0 +1,137 @@
+.dealsCountdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0px;
+  padding: 4px 0px;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+}
+
+.countdownSection span{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.dealsCountdown .countdownSection .countdownAmount {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 6rem;
+  height: 6rem;
+  min-height: 4rem;
+  width: 5rem;
+  border-radius: 0.5px;
+  color: var(--sp-green);
+  margin-bottom: 0.65rempx;
+  padding: 0.625rem;
+  text-align: center;
+  padding-top: 1rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.countdownAmount .countdownSection .timePart{
+  background-color: var(--sp-input-bg-dark) !important;
+}
+
+#countdown:hover {
+  opacity: 0.2;
+  color: var(--fface-red);
+}
+
+.dealsCountdown:hover .countdownSection:hover .countdownAmount:hover {
+  color: var(--fface-red);
+  box-shadow: var(--fface-red) 1px 1px 15px 0px;
+  opacity: 0.2;
+} 
+
+:root[data-theme='dark'] .countdownAmount {
+  box-shadow: var(--apple-box-shadow);
+}
+
+:root[data-theme='light'] .countdownAmount{
+  box-shadow: var(--sp-green) 3.5px 3.5px 15px 0px;
+}
+
+.dealsCountdown .countdownSection .countdownPeriod {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.125rem;
+  color: #898A8A;
+}
+
+.dealsCountdown .countdownSection:last-child::before {
+  display: none;
+}
+
+.dealsCountdown .countdownSection {
+  width: 25%;
+}
+
+.dealsCountdown .countdownSection .countdownAmount {
+  font-size: 1.5625rem;
+  min-height: 4.0625rem;
+  line-height: 4.0625rem;
+}
+
+.countdownPeriod {
+  padding: 1rem 0rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+#countdown {
+  margin-top: 1.5625;
+  margin-bottom: 1.5625rem;
+}
+
+#days, #hours, #minutes, #seconds {
+  color: #1cff28;
+  padding-bottom: 0;
+}
+
+#days:hover, #hours:hover, #minutes:hover, #seconds:hover {
+  color: #cc0000;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#days {
+  padding-left: 2.25rem;
+}
+
+#hours {
+  padding-left: 0.35rem;
+}
+
+#seconds {
+  text-align: start;
+  margin-left: -0.5rem;
+}
+
+#minutes {
+  text-align: start;
+  margin-left: -0.5rem;
+}
+
+.time-part {
+  background-color: rgb(25, 25, 25) !important;
+  color: #1cff28 !important;
+}
+
+.time-part:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #cc0000 !important;
+  transition: background-color 0.5s ease-in-out;
+}
+
+@media only screen and  (min-width: 1400px) {
+  .dealsCountdown .countdownSection .countdownAmount {
+    height: 4rem;
+    max-height: 4rem;
+    width: 3.5rem;
+    max-width: 3.5rem;
+  }
+}

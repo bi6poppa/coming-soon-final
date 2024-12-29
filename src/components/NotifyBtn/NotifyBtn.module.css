@@ -1,0 +1,10 @@
+#notify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+#notify, #icon {
+  font-size: 1.25rem;
+}

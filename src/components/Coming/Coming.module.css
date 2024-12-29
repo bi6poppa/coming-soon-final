@@ -1,0 +1,35 @@
+#comingSoon {
+  background-color: var(--sp-green);
+  border-radius: 36px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow, background-color 0.3s ease-in-out;
+  cursor: default;
+}
+
+:root[data-theme='dark'] #comingSoon {
+    color: var(--sp-dark);
+    box-shadow: 0px 0px 10px rgba(197, 202, 205, 0.8);
+    background-color: var(--sp-green);
+  }
+
+  :root[data-theme='dark'] #comingSoon:hover {
+    background-color: var(--sp-dark);
+    color: var(--fface-red);
+    border: 1px solid var(--fface-red);
+    box-shadow: 0px 0px 10px var(--fface-red);
+  }
+
+:root[data-theme='light']  #comingSoon {
+    color: var(--sp-light);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  :root[data-theme='light'] #comingSoon:hover {
+    background-color: var(--sp-light);
+    color: var(--fface-red);
+    border: 1px solid var(--fface-red);
+    box-shadow: 0px 0px 10px var(--fface-red);
+  }
+

@@ -1,0 +1,20 @@
+/*#footer {
+  display: flex;
+  position: fixed-bottom;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}*/
+
+#bizInfo {
+  margin-bottom: 0px !important;
+  font-size: 0.85rem;
+  justify-content: flex-end !important;
+}
+
+#logo {
+  font-size: 0.75rem !important;
+}

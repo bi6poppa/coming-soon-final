@@ -1,0 +1,90 @@
+@import 'styles/bootstrap.min.css';
+
+:root {
+  --sp-dark: #1c1c1e;
+  --sp-light: #a3a3a8;
+  --sp-green: #1cff28;
+  --sp-dark-gray: #23272b;
+  --sp-med-gray: #919597;
+  --sp-silver: #c5cacd;
+  --fface-red: #cc0000;
+  --apple-box-shadow: rgba(0, 0, 0, 0.65) 3.5px 3.5px 15px 0px;
+  --apple-white: rgba(255, 255, 255, 0.98);
+  --apple-link-blue: rgb(41, 151, 255);
+  --sp-dark-blue: #213547;
+  --sp-light-blue: #3596f8;
+  --sp-blue: #0000b3;
+  --paydev-dark-gray: #373d43;
+  --sp-almost-dark: #555656;
+  --sp-input-bg-dark: rgba(255, 255, 255, 0.04);
+  --sp-light-gray: #949698;
+  --paydev-font: "Lucida Console", sans-serif;
+  --sp-clear: rgba(0, 0, 0, 0);
+  --sp-silver-shadow: 0px 0px 10px rgba(197, 202, 205, 0.8);
+  --sp-green-shadow: 0px 0px 10px 0px #1cff28;
+  --fface-shadow: var(--fface-red) 0px 2px 20px 0px;
+
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  font-family: var(--paydev-font);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root[data-theme='dark']  body {
+    background-color: var(--sp-dark);
+    color: var(--sp-light);
+}
+
+:root[data-theme='light'] body {
+    color: var(--sp-dark);
+    background-color: var(--sp-light);
+}
+
+#clock {
+  filter: url(#shadow);
+}
+
+#min:hover {
+  stroke: var(--fface-red);
+}
+
+#hour:hover {
+  stroke: var(--fface-red);
+}
+
+#sec {
+  stroke: var(--sp-dark);
+  filter: none;
+}
+
+#clock:hover {
+  filter: url(#hover-shadow);
+}
+
+#logo {
+  font-size: 0.75rem !important;
+}

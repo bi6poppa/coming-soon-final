@@ -1,0 +1,106 @@
+#blind, #switch2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#blind {
+  padding-bottom: 2rem;
+}
+
+.myThemeSwitch {
+  position: relative;
+  height: 1rem;
+  width: 1.5rem;
+}
+
+.switchInput {
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+  height: 1.75rem;
+  width: 3.85rem;
+  padding: 2px 0px 2px 2px;
+  border-radius: 32px;
+  overflow: hidden;
+  transition: box-shadow 0.75s ease;
+}
+
+.switchKnob {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 0;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 1.45rem;
+  height: 1.45rem;
+  cursor: pointer;
+  transition: margin-left 0.5s ease;
+}
+
+.sun {
+  padding: 0.85rem 0.625rem 0.625rem 0.7rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.moon {
+  display: none;
+  position: relative;
+  font-size: 1rem;
+  color: #1cff28;
+  padding-top: 0.15rem;
+  right: 3.15rem;
+  cursor: pointer;
+}
+
+.button {
+  background: none !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+}
+
+:root[data-theme='dark'] .circle {
+  margin-left: 0.07rem;
+  background-color: var(--sp-blue);
+}
+
+:root[data-theme='light'] .moon {
+  display: block;
+  color: var(--sp-green);
+}
+
+:root[data-theme='light'] .sun {
+  display: none;
+}
+
+/* Styles for dark theme */
+:root[data-theme='light'] .circle {
+  margin-left: 2.15rem; /* Adjust this value as needed */
+  background-color: var(--sp-green);
+  margin-bottom: 0.07rem;
+  height: 1.35rem;
+  width: 1.35rem;
+}
+
+:root[data-theme='dark'] .moon {
+  display: none;
+}
+
+:root[data-theme='dark'] .sun {
+  display: block;
+  color: var(--sp-blue);
+}
+
+:root[data-theme='dark'] .switchInput {
+  background-color: var(--sp-green);
+}
+
+:root[data-theme='light'] .switchInput {
+  background-color: var(--sp-blue);
+}

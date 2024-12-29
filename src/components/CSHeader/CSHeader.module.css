@@ -1,0 +1,15 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 100%;
+}
+
+:root[data-theme='light'] #header {
+  background-color: var(--sp-light);
+}
+
+:root[data-theme='dark'] #header {
+  background-color: var(--sp-dark);
+}
