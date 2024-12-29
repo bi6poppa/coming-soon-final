@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 100%;
   min-width: 100%;
+  padding-top: 1.5rem;
 }
 
 :root[data-theme='light'] #header {

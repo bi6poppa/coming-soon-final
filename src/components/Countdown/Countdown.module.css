@@ -86,11 +86,20 @@
 #countdown {
   margin-top: 1.5625;
   margin-bottom: 1.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #days, #hours, #minutes, #seconds {
   color: #1cff28;
   padding-bottom: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  #days, #hours, #minutes, #seconds {
+    font-size: 1rem;
+  }
 }
 
 #days:hover, #hours:hover, #minutes:hover, #seconds:hover {
@@ -99,21 +108,21 @@
 }
 
 #days {
-  padding-left: 2.25rem;
+  padding-left: 1rem;
 }
 
 #hours {
-  padding-left: 0.35rem;
+  padding-left: 1rem;
 }
 
 #seconds {
   text-align: start;
-  margin-left: -0.5rem;
+  padding-left: 0.75rem;
 }
 
 #minutes {
   text-align: start;
-  margin-left: -0.5rem;
+  padding-left: 0.5rem;
 }
 
 .time-part {

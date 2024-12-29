@@ -41,7 +41,7 @@ const Countdown = (endDateTime) => {
     <>
       <Stack className={`${styles.dealsCountdown} d-flex justify-content-center`} direction="horizontal" gap={2}>
         <div className={styles.countdownSection}>
-          <span className={`${styles.countdownAmount} fs-1 lh-16 mx-4 ${styles.timePart}`}>{timeParts.days}</span>
+          <span className={`${styles.countdownAmount} fs-1 lh-16 me-4 ${styles.timePart}`}>{timeParts.days}</span>
           <span className={`${styles.countdownPeriod} lh-14 font-xs`} id={styles.days}> days </span>
         </div>
         <div className={styles.countdownSection}>
