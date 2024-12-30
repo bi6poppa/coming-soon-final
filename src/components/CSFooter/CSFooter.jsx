@@ -13,7 +13,7 @@ const CSFooter = () => {
                         </a>
                         <p className="lh-1 fs-6 pt-2 mb-3" id={styles.logo}>&copy;2024 Payne<br />Development LLC</p>
                     </div>
-                    <p className="text-end pe-3 pb-3" id={styles.bizInfo}>Augusta, GA 30907<br />Hours: 9:00 - 6:00 / Mon - Sat<br/>706.834.0329<br />support@paynedevelops.net</p>
+                    <p className="text-end pe-3 pb-3" id={styles.bizInfo}>706.834.0329<br />Augusta, GA 30907<br />Hours: 9:00 - 6:00 / Mon - Sat<br />support@paynedevelops.net</p>
                 </div>
             </Row>
         </>
