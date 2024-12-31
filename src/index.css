@@ -1,6 +1,6 @@
 @import url("styles/bootstrap.min.css");
 
-:root {
+:root, html {
   --sp-dark: #1c1c1e;
   --sp-light: #a3a3a8;
   --sp-green: #1cff28;
@@ -55,13 +55,13 @@
 }
 
 @media only screen and (max-height: 1000px) {
-  :root, #root, body {
+  html {
     overflow: scroll;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  :root, #root, body {
+  html {
     overflow: scroll;
   }
 }
@@ -74,6 +74,8 @@
 }
 
 html {
+  display: flex;
+  flex-direction: row;
   font-size: 16px;
   box-sizing: border-box;
   margin: 0;
@@ -87,8 +89,4 @@ html {
 body {
   display: flex;
   overflow: hidden;
-}
-
-#root {
-  background-color: var(--sp-dark);  
 }

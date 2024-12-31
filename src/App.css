@@ -1,0 +1,22 @@
+#root {
+  background-color: var(--sp-dark);
+  min-width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  font-family: var(--paydev-font);
+}
+
+@font-face {
+  font-family: 'Lucida Console', Raleway, sans-serif;
+  src: url('assets/lucon.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

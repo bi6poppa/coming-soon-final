@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/Container'
-import logo from '/darkSiteLogo.png'
+import logo from '/lightSiteLogo.png'
 import Coming from '../Coming/Coming'
 import styles from '@components/CSHeader/CSHeader.module.css'
 
@@ -11,10 +11,8 @@ const Header = () => {
         <a href="#">
           <img
             src={logo}
-            height="4.0625rem"
-            margin="0"
-            padding="0"
-            float="right"
+            id={styles.logo}
+            alt="paydev logo"
           />
         </a>
       </Container>

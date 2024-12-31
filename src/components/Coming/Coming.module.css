@@ -14,5 +14,5 @@
   background-color: var(--sp-dark);
   color: var(--fface-red);
   border: 1px solid var(--fface-red);
-  box-shadow: 0px 0px, 10px, var(--fface-red);
+  box-shadow: 0px 0px 10px var(--fface-red);
 }
