@@ -1,0 +1,18 @@
+#comingSoon {
+  background-color: var(--sp-green);
+  border-radius: 36px;
+  min-height: 2.8125rem;
+  display: flex;
+  align-items: center;
+  transition: box-shadow, background-color 0.3s ease-in-out;
+  cursor: default;
+  color: var(--sp-dark);
+  box-shadow: 0px 0px 10px rgba(197, 202, 205, 0.8);
+}
+
+#comingSoon:hover {
+  background-color: var(--sp-dark);
+  color: var(--fface-red);
+  border: 1px solid var(--fface-red);
+  box-shadow: 0px 0px, 10px, var(--fface-red);
+}

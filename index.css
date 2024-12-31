@@ -1,0 +1,94 @@
+@import url("styles/bootstrap.min.css");
+
+:root {
+  --sp-dark: #1c1c1e;
+  --sp-light: #a3a3a8;
+  --sp-green: #1cff28;
+  --sp-dark-gray: #23272b;
+  --sp-med-gray: #919597;
+  --sp-silver: #c5cacd;
+  --fface-red: #cc0000;
+  --apple-box-shadow: rgba(0, 0, 0, 0.65) 3.5px 3.5px 15px 0px;
+  --apple-white: rgba(255, 255, 255, 0.98);
+  --apple-link-blue: rgb(41, 151, 255);
+  --sp-dark-blue: #213547;
+  --sp-light-blue: #3596f8;
+  --sp-blue: #0000b3;
+  --paydev-dark-gray: #373d43;
+  --sp-almost-dark: #555656;
+  --sp-input-bg-dark: rgba(255, 255, 255, 0.04);
+  --sp-light-gray: #949698;
+  --paydev-font: "Lucida Console", sans-serif;
+  --sp-clear: rgba(0, 0, 0, 0);
+  --sp-silver-shadow: 0px 0px 10px rgba(197, 202, 205, 0.8);
+  --sp-green-shadow: 0px 0px 10px 0px #1cff28;
+  --fface-shadow: var(--fface-red) 0px 2px 20px 0px;
+  
+  font-family: var(--paydev-font), sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  display: -webkit-box;      /* Old versions of Safari and iOS */
+  display: -moz-box;         /* Old versions of Firefox */
+  display: -ms-flexbox;      /* IE 10 */
+  display: -webkit-flex;     /* Newer versions of Chrome, Safari, and iOS */
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  height: -webkit-fill-available;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media only screen and (max-height: 1000px) {
+  :root, #root, body {
+    overflow: scroll;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :root, #root, body {
+    overflow: scroll;
+  }
+}
+
+@font-face {
+  font-family: 'Lucida Console', Raleway, sans-serif;
+  src: url('assets/lucon.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+}
+
+#root {
+  background-color: var(--sp-dark);  
+}
