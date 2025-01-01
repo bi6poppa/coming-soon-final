@@ -1,5 +1,7 @@
 #root {
+  display: flex;
   background-color: var(--sp-dark);
+  color: var(--sp-light);
   min-width: 100vw;
   max-width: 100%;
   min-height: 100vh;
@@ -17,6 +19,19 @@
   src: url('assets/lucon.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
 }
 
 
