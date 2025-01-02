@@ -22,7 +22,7 @@ function App() {
           <div className="box-count box-count-square wow fadeInUp" id="countdown">
             <Countdown endDateTime={currentTime.setDate(currentTime.getDate() + 44)} />
           </div>
-          <p className="text-xl" id="launch">Get notified when we launch.</p>
+          <h2 className="text-xl text-start py-3" id="launch">Get notified when we launch.</h2>
         </Col>
         <Col className="col-lg-5">
           <Clock />
