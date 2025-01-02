@@ -1,0 +1,16 @@
+#email {
+  background-color: var(--sp-input-bg-dark);
+  transition: opacity 0.8s ease-in-out;
+  border-color: var(--sp-dark);
+  padding: 1.25rem;
+  width: 65%;
+} 
+
+#email:hover {
+  box-shadow: var(--fface-red) 1px 1px 15px 0px;
+  opacity: 0.2;
+}
+
+form {
+  display: flex;
+}

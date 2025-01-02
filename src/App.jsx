@@ -8,6 +8,7 @@ import Countdown from '@components/Countdown/Countdown'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import CSHeader from '@components/CSHeader/CSHeader'
+import Notify from '@components/Notify/Notify'
 import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Countdown endDateTime={currentTime.setDate(currentTime.getDate() + 44)} />
           </div>
           <h2 className="text-xl text-start py-3" id="launch">Get notified when we launch.</h2>
+          <Notify />
         </Col>
         <Col className="col-lg-5">
           <Clock />
