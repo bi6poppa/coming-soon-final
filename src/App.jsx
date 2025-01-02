@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import CSHeader from '@components/CSHeader/CSHeader'
 import Notify from '@components/Notify/Notify'
+import Socials from '@components/Socials/Socials'
 import './App.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           </div>
           <h2 className="text-xl text-start py-3" id="launch">Get notified when we launch.</h2>
           <Notify />
+          <Socials />
         </Col>
         <Col className="col-lg-5">
           <Clock />
