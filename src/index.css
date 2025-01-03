@@ -1,6 +1,4 @@
-@import url("styles/bootstrap.min.css");
-
-:root, html {
+:root {
   --sp-dark: #1c1c1e;
   --sp-light: #a3a3a8;
   --sp-green: #1cff28;
@@ -24,47 +22,50 @@
   --sp-green-shadow: 0px 0px 10px 0px #1cff28;
   --fface-shadow: var(--fface-red) 0px 2px 20px 0px;
   
-  font-family: var(--paydev-font), sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  display: flex;
-  display: -webkit-box;      /* Old versions of Safari and iOS */
-  display: -moz-box;         /* Old versions of Firefox */
-  display: -ms-flexbox;      /* IE 10 */
-  display: -webkit-flex;     /* Newer versions of Chrome, Safari, and iOS */
-  align-items: start;
-  flex-direction: column;
-  justify-content: center;
   min-width: 100vw;
   max-width: 100%;
   min-height: 100vh;
   max-height: 100%;
   height: -webkit-fill-available;
   box-sizing: border-box;
-  overflow: hidden;
-  padding: 0;
-  margin: 0 auto;
+  padding: 0px;
+  margin: 0px auto;
 }
 
-@media only screen and (max-height: 1000px) {
-  html {
-    overflow: scroll;
+* {
+  flex-shrink: 1;
+}
+
+
+@media only screen and (min-height: 1001px) {
+  body {
+    overflow: hidden;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  html {
-    overflow: scroll;
+@media only screen and (min-width: 1001px) {
+  body {
+    overflow: hidden;
   }
 }
+
+@media only screen and (max-width: 1000px) and (min-width: 300px) {
+  body {
+    overflow: scroll !important;
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 
 @font-face {
   font-family: 'Lucida Console', Raleway, sans-serif;
@@ -88,5 +89,15 @@ html {
 
 body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sp-dark);
   overflow: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  font-family: var(--paydev-font), sans-serif;
+  line-height: 1.5;
+  margin: 0.5px;
 }

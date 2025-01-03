@@ -1,0 +1,20 @@
+#clock {
+  filter: url(#shadow);
+}
+
+#min:hover {
+  stroke: var(--fface-red);
+}
+
+#hour:hover {
+  stroke: var(--fface-red);
+}
+
+#sec {
+  stroke: var(--sp-dark);
+  filter: none;
+}
+
+#clock:hover {
+  filter: url(#hover-shadow);
+}

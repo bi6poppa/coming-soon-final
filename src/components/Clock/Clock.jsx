@@ -32,7 +32,7 @@ const Clock = () => {
             <feDropShadow dx="3" dy="3" stdDeviation="3" floodColor="#cc0000" floodOpacity="0.9" />
           </filter>
         </defs>
-        <g id="clock">
+        <g id={styles.clock}>
           <circle fill="none" stroke="#919597" strokeWidth="9" strokeMiterlimit="10" cx="253" cy="253" r="247.5" id="circle" />
           <circle fill="#919597" cx="253" cy="253" r="17.36" id="middle" />
           <line id="min" className="line" fill="none" stroke="#919597" strokeWidth="9" strokeMiterlimit="10" x1="253" y1="67.375" x2="253" y2="253" />

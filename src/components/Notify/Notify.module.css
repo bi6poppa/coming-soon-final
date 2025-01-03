@@ -4,11 +4,20 @@
   border-color: var(--sp-dark);
   padding: 1.25rem;
   width: 65%;
+  color: var(--sp-light);
+  box-shadow: var(--apple-box-shadow) !important;
 } 
 
+#email::placeholder {
+  color: var(--sp-med-gray);
+}
+
 #email:hover {
-  box-shadow: var(--fface-red) 1px 1px 15px 0px;
-  opacity: 0.2;
+  box-shadow: var(--fface-red) 1px 1px 15px 1px;
+}
+
+#email:active, #email:focus {
+  border-color: transparent;
 }
 
 form {

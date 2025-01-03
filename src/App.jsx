@@ -16,7 +16,7 @@ function App() {
     const currentTime = new Date()
 
   return (
-    <Container className="container-fluid" fluid>
+    <div>
       <CSHeader />
       <Row id="main">
         <Col id="banner-column">
@@ -33,7 +33,7 @@ function App() {
         </Col>
         <CSFooter />
       </Row>
-    </Container>
+    </div>
   )
 }
 
