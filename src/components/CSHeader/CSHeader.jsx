@@ -6,7 +6,7 @@ import styles from '@components/CSHeader/CSHeader.module.css'
 const Header = () => {
   return (
     <>
-      <Container className="pt-1 pe-2" id={styles.header} fluid>
+      <Container id={styles.header} fluid>
         <Coming />
         <a href="#">
           <img

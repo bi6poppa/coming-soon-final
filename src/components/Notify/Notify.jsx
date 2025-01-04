@@ -10,7 +10,7 @@ const Notify = () => {
   };
 
   return (    
-    <div className="form-notify">
+    <div className="form-notify d-flex flex-column">
       <form action="#">
         <input
           className="form-control"
@@ -22,7 +22,7 @@ const Notify = () => {
         />
         <NotifyBtn email={email} />
       </form>
-  </div>
+    </div>
   )
 }
 

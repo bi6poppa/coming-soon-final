@@ -5,17 +5,16 @@
   width: 0.5rem;
   background-color: var(--sp-dark);
   background-position: center;
-  padding-top: 0.25rem;
   color: var(--sp-dark);
   background-size: cover;
   transition: text-shadow 0.5s, opacity 0.5s;
-  text-shadow: 0px 0px 3.5px var(--sp-green);
+  text-shadow: 0px 0px 4px var(--sp-green);
 }
 
 .bi:hover {
-  text-shadow: 0px 0px 3.5px var(--fface-red);
+  text-shadow: 0px 0px 4px var(--fface-red);
 }
 
 #socials {
-  margin-left: 7rem;
+  text-align: center;
 }

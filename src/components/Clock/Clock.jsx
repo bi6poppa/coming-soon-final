@@ -1,5 +1,6 @@
 import  { useEffect } from 'react'
 import styles from './Clock.module.css'
+import Col from 'react-bootstrap/Col'
 
 const Clock = () => {
   useEffect(() => {
@@ -17,10 +18,9 @@ const Clock = () => {
   }, []);
 
   return (
-    <div className={styles.clockWrap}>
+    <Col className="d-flex m-0 h-100">
       <svg
-        width="525px"
-        height="525px"
+        className="m-5 p-3"
         viewBox="0 0 525 525"
         enableBackground="new 0 0 525 525"
       >
@@ -40,7 +40,7 @@ const Clock = () => {
           <line id="sec" className="line" fill="none" stroke="#1c1c1e" strokeWidth="5" strokeMiterlimit="10" x1="253" y1="48.815" x2="253" y2="253" />
         </g>
       </svg>
-    </div>
+    </Col>
   );
 };
 

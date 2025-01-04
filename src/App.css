@@ -1,23 +1,22 @@
 * {
   box-sizing: border-box;
-  flex-shrink: 1;
+  flex-shrink: 1 !important;
+  font-family: var(--paydev-font);
 }
 
 #root {
-  display: flex;
-  flex-direction: row;
   background-color: var(--sp-dark);
   color: var(--sp-light);
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  height: 100% !important;
   max-height: 100%;
-  text-align: center;
-  font-family: var(--paydev-font);
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
 }
+
+/*#main {
+  display: flex;
+  align-items: center;  
+}*/
 
 @font-face {
   font-family: 'Lucida Console', Raleway, sans-serif;
@@ -36,18 +35,9 @@ h1 {
   padding: 0px;
 }
 
-#banner-column {
-  display: flex;
-  flex-direction: column;
-}
-
-#countdown {
-  display: flex;
-  justify-content: center;
-}
-
 #main {
-  margin: 0.5rem;
-  margin-top: 0px;
+  margin: 0;
+  height: 75%;
 }
+
 
