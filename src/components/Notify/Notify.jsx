@@ -10,7 +10,7 @@ const Notify = () => {
   };
 
   return (    
-    <div className="form-notify container-fluid d-flex justify-content-center align-items-start" id={styles.form}>
+    <div className="form-notify container-fluid d-flex justify-content-between align-items-center" id={styles.form}>
       <form action="#">
         <input
           className="form-control"

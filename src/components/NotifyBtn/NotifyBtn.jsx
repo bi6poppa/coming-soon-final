@@ -78,7 +78,7 @@ const NotifyBtn = ({ email }) => {
 
   return (    
     <button
-      className="btn mx-4"
+      className="btn "
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
       onClick={handleClick}
