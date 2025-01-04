@@ -175,3 +175,13 @@
     background-color: var(--sp-input-bg-dark) !important;
   }
 }
+
+.div {
+  display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+  .div {
+    flex-direction: column;
+  }
+}

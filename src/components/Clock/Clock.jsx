@@ -18,9 +18,9 @@ const Clock = () => {
   }, []);
 
   return (
-    <Col className="d-flex m-0 h-100">
+    <Col className="d-flex m-0 h-100 px-5 container-fluid">
       <svg
-        className="m-5 p-3"
+        className="m-3"
         viewBox="0 0 525 525"
         enableBackground="new 0 0 525 525"
       >

@@ -13,26 +13,26 @@ import Socials from '@components/Socials/Socials'
 import './App.css'
 
 function App() {
-    const currentTime = new Date()
+  const currentTime = new Date();
 
   return (
-      <Stack direction="vertical" gap={3} className="d-flex m-0 pt-3 align-items-center justify-content-center container-fluid">
-        <CSHeader className="container-xxl"/>
-          <Row className="container-fluid d-flex justify-content-between" id="main">
-            <Col className="d-flex flex-column p-0" id="banner-column">
-              <h1 className="py-3">Our new website is<br />on its way.</h1>
-              <Countdown endDateTime={currentTime.setDate(currentTime.getDate() + 44)} />
-              <h2 className="text-xl text-start py-3" id="launch">Get notified when we launch.</h2>
-              <Notify />
-              <Socials />
-            </Col>
-            <Col className="ps-5 m-0">
-              <Clock />
-            </Col>
+      <Stack direction="vertical" gap={1} className="d-flex justify-content-center container-fluid mt-3" id="stack">
+          <CSHeader className="container-xxl"/>
+          <Row className="container-fluid d-flex align-items-center" id="main">
+              <Col className="d-flex flex-column justify-content-center m-0 p-0" id="banner-column">
+                  <h1 className="pb-3 m-0" id="website">Our new website is<br />on its way.</h1>
+                  <Countdown endDateTime={currentTime.setDate(currentTime.getDate() + 44)} />
+                  <h2 className="text-xl text-start pb-3" id="launch">Get notified when we launch.</h2>
+                  <Notify />
+                  <Socials />
+              </Col>
+              <Col className="d-flex align-items-center">
+                  <Clock />
+              </Col>
           </Row>
-        <CSFooter className="container-xxl"/>
+          <CSFooter className="container-xxl"/>
       </Stack>
-  )
+  );
 }
 
 export default App;

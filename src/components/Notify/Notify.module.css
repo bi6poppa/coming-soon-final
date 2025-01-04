@@ -1,11 +1,10 @@
 #email {
   background-color: var(--sp-input-bg-dark);
-  transition: opacity 0.8s ease-in-out;
   border-color: var(--sp-dark);
-  padding: 1.25rem;
-  width: 65%;
-  color: var(--sp-light);
-  box-shadow: var(--apple-box-shadow) !important;
+  width: 100%;
+  color: var(--sp-green);
+  box-shadow: var(--apple-box-shadow);
+  transition: box-shadow 0.8s ease-in-out, opacity 0.8s ease-in-out;
 } 
 
 #email::placeholder {
@@ -14,6 +13,7 @@
 
 #email:hover {
   box-shadow: var(--fface-red) 1px 1px 15px 1px;
+  opacity: 0.7;
 }
 
 #email:active, #email:focus {
@@ -22,4 +22,16 @@
 
 form {
   display: flex;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  #form {
+    flex-direction: column;
+  }
 }

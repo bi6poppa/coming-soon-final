@@ -10,12 +10,12 @@ const Notify = () => {
   };
 
   return (    
-    <div className="form-notify d-flex flex-column">
+    <div className="form-notify container-fluid d-flex justify-content-center align-items-start" id={styles.form}>
       <form action="#">
         <input
           className="form-control"
           type="text"
-          placeholder="< you@youremail.com >"
+          placeholder="< you@emailprovider.com >"
           id={styles.email}
           value={email}
           onChange={handleChange}
