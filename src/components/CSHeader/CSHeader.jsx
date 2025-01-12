@@ -1,12 +1,12 @@
 import Container from 'react-bootstrap/Container'
 import logo from '/lightSiteLogo.png'
 import Coming from '../Coming/Coming'
-import styles from '@components/CSHeader/CSHeader.module.css'
+import styles from './CSHeader.module.css'
 
 const Header = () => {
   return (
     <>
-      <Container id={styles.header} fluid>
+      <Container className="pt-1 pe-2" id={styles.header} fluid>
         <Coming />
         <a href="#">
           <img

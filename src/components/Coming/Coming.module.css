@@ -1,10 +1,23 @@
+* {
+  font-family: "Lucida Console";
+  box-sizing: border-box;
+  flex-shrink: 1;
+}
+
 #comingSoon {
   background-color: var(--sp-green);
   border-radius: 36px;
-  transition: box-shadow, background-color 0.3s ease-in-out;
+  height: 3rem;
+  min-height: 2.8125rem;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.7s ease-in-out, background-color 0.3s ease-in-out;
   cursor: default;
   color: var(--sp-dark);
   box-shadow: 0px 0px 10px rgba(197, 202, 205, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-weight: 500;
+  padding: 0.75rem 1rem;
 }
 
 #comingSoon:hover {
@@ -12,4 +25,5 @@
   color: var(--fface-red);
   border: 1px solid var(--fface-red);
   box-shadow: 0px 0px 10px var(--fface-red);
+  opacity: 0.8;
 }
