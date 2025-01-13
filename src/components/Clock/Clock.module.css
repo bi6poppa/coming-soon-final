@@ -1,20 +1,44 @@
+#clockWrap {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  flex-shrink: 1;
+  width: 100%;
+  max-width: 100%;
+}
+
 #clock {
+  margin: 0;
+  padding: 0;
+  transition: stroke 1s ease-in-out, filter 1s ease-in-out;
+}
+
+.clock {
   filter: url(#shadow);
+  transition: filter 1s ease-in-out, stroke 1s ease-in-out;
+  stroke: var(--paydev-dark-gray);
+  fill: var(--paydev-dark-gray);
 }
 
-#min:hover {
-  stroke: var(--fface-red);
-}
-
-#hour:hover {
-  stroke: var(--fface-red);
-}
-
-#sec {
-  stroke: var(--sp-dark);
-  filter: none;
-}
-
-#clock:hover {
+.clock:hover {
   filter: url(#hover-shadow);
+  stroke: #919597;
+  fill: #919597;
+}
+
+.sec {
+  stroke: var(--sp-dark);
+  transition: stroke 0.1s ease-in-out, filter 1s ease-in-out;
+}
+
+
+#middle {
+  fill: inherit;
+  filter: none;
+  transition: fill 0.5s ease-in-out, filter 1s ease-in-out;
+}
+
+.clock:hover #middle {
+  filter: none;
 }

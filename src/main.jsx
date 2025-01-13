@@ -3,8 +3,7 @@ import { createRoot } from 'react-dom/client'
 
 import './utils/bootstrap.bundle.js'
 
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import './styles/bootstrap.css'
+import 'bootstrap-icons/font/bootstrap-icons.scss'
 import './index.css'
 import App from './App.jsx'
 
@@ -16,3 +15,4 @@ root.render(
     <App />
   </StrictMode>
 )
+

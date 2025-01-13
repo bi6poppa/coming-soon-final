@@ -1,50 +1,107 @@
-* {
-  box-sizing: border-box;
-  flex-shrink: 1 !important;
-  font-family: var(--paydev-font);
-}
-
 #root {
   display: flex;
-  align-items: start;
-  justify-content: center;
-  background-color: var(--sp-dark);
-  color: var(--sp-light);
+  flex-shrink: 1;
+  width: 100%;
   height: 100%;
-  max-height: 100%;
-  min-height: 100%;
-  width: 100% !important;
   max-width: 100%;
+  max-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--sp-dark);
+  flex-wrap: wrap;
+  padding: 0rem 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+}
+
+#container {
+  margin: 0rem 0.5rem !important;
+}
+
+
+#row {
+  display: flex;
+  align-items: center;
+}
+
+#website, #launch {
+  text-shadow: 1px 1px 3px #1cff28;
+  transition: color 0.7s ease-in-out, text-shadow 0.7s ease-in-out;
+  margin: 0;
+  padding: 1rem 0rem;
+}
+
+#website:hover, #launch:hover {
+  color: var(--sp-med-gray);
+  text-shadow: 1px 1px 4px #cc0000;
+}
+
+#website {
+  line-height: 2.5rem
+}
+
+#launch {
+  line-height: 2.25rem;
+}
+
+/*#main {
   margin: 0;
   padding: 0;
-}
-
-h1 {
+  align-items: center;
+  color: var(--sp-med-gray);
   display: flex;
   flex-direction: row;
-  align-items: start;
-  justify-content: start;
-  text-align: left;
-}
-
-#main {
-  margin: 0;
+  flex-wrap: wrap;
   width: 100%;
+  max-width: 100%;
 }
 
-#launch, #website {
-  transition: text-shadow 0.7s ease-in-out, color 0.7s ease-in-out;
+#website {
+  display: flex;
+  flex-shrink: 1;
+  width: 100%;
+  font-weight: 500;
+  line-height: 2.5rem;
+  padding: 1rem 0rem;
+  text-shadow: 1px 1px 4px #01497a;
+  transition: color 0.7s ease-in-out, text-shadow 0.7s ease-in-out;
 }
 
-#launch:hover, #website:hover {
-  color: var(--sp-dark);
-  text-shadow: 1px 1px 4px var(--fface-red);
+#launch {
+  display: flex;
+  flex-shrink: 1;
+  width: 100%;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  padding: 1rem 0rem;
+  text-shadow: 1px 1px 4px #01497a;
+  transition: color 0.7s ease-in-out, text-shadow 0.7s ease-in-out;
 }
 
-#stack {
-  height: 100% !important;
-  min-height: 100%;
+#website:hover, #launch:hover {
+  text-shadow: 1px 1px 4px #1cff28;
+  color: #0000b3;
 }
 
+#left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 50%;
+  flex-wrap: wrap;
+}
 
-
+#right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 50;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}*/

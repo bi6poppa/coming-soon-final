@@ -1,6 +1,5 @@
-import  { useEffect } from 'react'
-import styles from './Clock.module.css'
-import Col from 'react-bootstrap/Col'
+import { useEffect } from 'react';
+import styles from './Clock.module.css'; // Import the CSS module
 
 const Clock = () => {
   useEffect(() => {
@@ -18,9 +17,9 @@ const Clock = () => {
   }, []);
 
   return (
-    <Col className="d-flex m-0 h-100 px-5 container-fluid">
+    <div id={styles.clockWrap}>
       <svg
-        className="m-3"
+        width="525px"
         viewBox="0 0 525 525"
         enableBackground="new 0 0 525 525"
       >
@@ -31,16 +30,19 @@ const Clock = () => {
           <filter id="hover-shadow" x="-50%" y="-50%" width="200%" height="200%">
             <feDropShadow dx="3" dy="3" stdDeviation="3" floodColor="#cc0000" floodOpacity="0.9" />
           </filter>
+          <filter id="sec-hover" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="3" dy="3" stdDeviation="3" floodColor="#0000b3" floodOpacity="0.9" />
+          </filter>
         </defs>
-        <g id={styles.clock}>
-          <circle fill="none" stroke="#919597" strokeWidth="9" strokeMiterlimit="10" cx="253" cy="253" r="247.5" id="circle" />
-          <circle fill="#919597" cx="253" cy="253" r="17.36" id="middle" />
-          <line id="min" className="line" fill="none" stroke="#919597" strokeWidth="9" strokeMiterlimit="10" x1="253" y1="67.375" x2="253" y2="253" />
-          <line id="hour" className="line" fill="none" stroke="#919597" strokeWidth="7" strokeMiterlimit="10" x1="253" y1="129.247" x2="253" y2="253" />
-          <line id="sec" className="line" fill="none" stroke="#1c1c1e" strokeWidth="5" strokeMiterlimit="10" x1="253" y1="48.815" x2="253" y2="253" />
+        <g id={styles.clock} className={`${styles.clock} col-sm-6`}>
+          <circle fill="none" strokeWidth="9" strokeMiterlimit="10" cx="253" cy="253" r="247.5" id={styles.circle} />
+          <circle cx="253" cy="253" r="17.36" id={styles.middle} className={styles.clock}/>
+          <line id="min" className={styles.line} fill="none" strokeWidth="9" strokeMiterlimit="10" x1="253" y1="67.375" x2="253" y2="253" />
+          <line id="hour" className={styles.line} fill="none" strokeWidth="7" strokeMiterlimit="10" x1="253" y1="129.247" x2="253" y2="253" />
+          <line id="sec" className={`${styles.line} ${styles.sec}`} fill="none" strokeWidth="5" strokeMiterlimit="10" x1="253" y1="48.815" x2="253" y2="253" />
         </g>
       </svg>
-    </Col>
+    </div>
   );
 };
 

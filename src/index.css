@@ -1,5 +1,11 @@
+* {
+  font-family: "Lucida Console";
+  box-sizing: border-box;
+  flex-shrink: 1;
+}
+
 :root {
-  --sp-dark: #1c1c1e;
+  --sp-dark: #060606;
   --sp-light: #a3a3a8;
   --sp-green: #1cff28;
   --sp-dark-gray: #23272b;
@@ -9,83 +15,66 @@
   --apple-box-shadow: rgba(0, 0, 0, 0.65) 3.5px 3.5px 15px 0px;
   --apple-white: rgba(255, 255, 255, 0.98);
   --apple-link-blue: rgb(41, 151, 255);
-  --sp-dark-blue: #213547;
+  --sp-dark-blue: #012e4c;
   --sp-light-blue: #3596f8;
   --sp-blue: #0000b3;
+  --swag-blue: #01497a;
   --paydev-dark-gray: #373d43;
   --sp-almost-dark: #555656;
   --sp-input-bg-dark: rgba(255, 255, 255, 0.04);
   --sp-light-gray: #949698;
   --paydev-font: "Lucida Console", sans-serif;
   --sp-clear: rgba(0, 0, 0, 0);
-  --sp-silver-shadow: 0px 0px 10px rgba(197, 202, 205, 0.8);
-  --sp-green-shadow: 0px 0px 10px 0px #1cff28;
+  --sp-silver-shadow: 0px 0px 10px rgba(1967, 202, 205, 0.8);
+  --swag-blue-shadow: 0px 0px 10px #01497a;
+  --sp-green-shadow: 2px 2px 15px #1cff28;
   --fface-shadow: var(--fface-red) 0px 2px 20px 0px;
-  
+
+
+  font-family: "Lucida Console";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--sp-silver);
+  background-color: var(--sp-dark);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  display: flex;
   height: 100%;
   max-height: 100%;
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-* {
-  flex-shrink: 1 !important;
-}
 
 @font-face {
-  font-family: 'Lucida Console', Raleway, sans-serif;
-  src: url('assets/lucon.ttf') format('ttf');
+  font-family: 'Lucida Console';
+  src: url('assets/lucon.ttf')
+  format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-html {
+body {
   display: flex;
-  flex-shrink: 1;
+  align-items: flex-start;
+  font-family: 'Lucida Console', Raleway, sans-serif;
   height: 100%;
   max-height: 100%;
   width: 100%;
   max-width: 100%;
   margin: 0;
   padding: 0;
+  background: url(/motherboard.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-* {  
-  font-size: 16px;
-  box-sizing: border-box;
-}
 
-body {
-  display: flex;
-  flex-shrink: 1;
-  align-items: start;
-  justify-content: center;
-  background-color: var(--sp-dark);
-  height: 100%;
-  max-height: 100%;
-  width: 100%;
-  max-width: 100%;
-  font-family: var(--paydev-font), sans-serif;
-  line-height: 1.5;
-  margin: 0px;
-  padding: 0px;
-}
 
-@media only screen and (max-width: 1100px) {
-  body {
-    overflow: scroll;
-  }
-}
-
-@media only screen and (min-width: 1101px) {
-  body {
-    overflow: hidden;
-  }
-}

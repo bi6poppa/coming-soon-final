@@ -1,21 +1,23 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import logo from '/bufflogo.png'
+import logo from '/darkFinal.png'
 import styles from './CSFooter.module.css'
 
 const CSFooter = () => {
     return (
         <Container id={styles.footer} fluid>
-            <Row className="d-flex" id={styles.footLogo}>
+            <Row className="d-flex align-items-end mb-0 pb-0" id={styles.footLogo}>
+              <Col className="d-flex flex-column justify-content-end m-0 p-0">
                 <a href="#">
-                    <img src={logo} alt="paydev logo" height="75" className="d-flex"/>
+                  <img src={logo} alt="paydev logo" height="60" className="d-flex" id={styles.footLogo}/>
                 </a>
-                <p className="d-flex text-start fs-6">&copy;2024 Payne<br />Development LLC</p>
+                <p className="mb-0 fs-6" id={styles.bizName}>&copy;csra swag LLC</p>
+              </Col>
+              <Col className="text-end p-0 d-flex align-items-center text-nowrap justify-content-end" id={styles.bizInfo}>
+                706.834.0329<br />Augusta, GA 30907<br />hello@brandthecsra.com<br />Hours: 9:00 - 6:00 / Mon - Sat
+              </Col>
             </Row>
-            <Col className="text-end" id={styles.bizInfo}>
-                706.834.0329<br />Augusta, GA 30907<br />Hours: 9:00 - 6:00 / Mon - Sat<br />support@paynedevelops.net
-            </Col>
         </Container>
     );
 }

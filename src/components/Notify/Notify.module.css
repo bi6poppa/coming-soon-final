@@ -1,47 +1,61 @@
 #email {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: var(--sp-input-bg-dark);
-  border-color: var(--sp-dark);
-  width: 100%;
-  color: var(--sp-green);
-  box-shadow: var(--apple-box-shadow);
-  transition: box-shadow 0.8s ease-in-out, opacity 0.8s ease-in-out;
-  margin-left: -6rem;
-  padding: 1.5rem;
-  margin-right: 4rem;
-} 
+  background-color: var(--sp-transparent);
+  border-color: transparent;
+  box-shadow: 2px 2px 6px var(--sp-green);
+  transition: color 0.7s ease-in-out, border 0.7s ease-in-out, background-color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
 
 #email::placeholder {
-  color: var(--sp-med-gray);
+  color: var(--sp-green);
 }
 
-#email:hover {
-  box-shadow: var(--fface-red) 1px 1px 15px 1px;
-  opacity: 0.7;
+#email::placeholder:hover {
+  color: var(--sp-dark);
 }
 
-#email:active, #email:focus {
+#form:hover #email {
+  color: var(--fface-red);
+  border: 2px solid var(--fface-red);
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 1px 1px 10px var(--fface-red);
+}
+
+#button {
+  background-color: rgba(28, 28, 30, 0.2);
   border-color: transparent;
+  color: var(--sp-dark);
+  text-shadow: 0.5px 0.5px 3px var(--sp-green);
+  font-weight: 500;
+  box-shadow: 1px 1px 6px var(--sp-dark);
+  transition: color 0.7s ease-in-out, border 0.7s ease-in-out, background-color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
 
-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+#form:hover #button {
+  color: var(--sp-med-gray);
+  box-shadow: 1px 1px 10px var(--fface-red);
+  text-shadow: 0.5px 0.5px 3px var(--fface-red);
 }
 
-#form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: flex-start;
+#form:hover #form::placeholder {
+  color: var(--fface-red);
 }
 
-@media only screen and (max-width: 425px) {
-  #form {
-    flex-direction: column;
+#noShare {
+  color: var(--sp-med-gray);
+  font-size: 1rem;
+  padding-top: 0.25rem;
+  text-shadow: 0px 0px 1px var(--sp-dark);
+  line-height: 1rem;
+}
+
+@media only screen and (max-width: 1023) {
+  #button {
+    padding: 0.5rem 0.75rem !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #button {
+    padding: 1rem 0.75rem !important;
   }
 }

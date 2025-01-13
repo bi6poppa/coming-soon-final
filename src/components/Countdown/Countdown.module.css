@@ -1,191 +1,108 @@
-* {
-  flex-shrink: 1;
-}
-
-.dealsCountdown {
+#counters {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-radius: 16px;
-  padding: 4px 0px;
-  width: 100%;
-  max-width: 100%;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-
-}
-
-.countdownSection span {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 7rem;
+  padding: 0;
+  column-gap: 1rem;
+  width: 85%;
 }
 
-.dealsCountdown .countdownSection .countdownAmount {
-  font-weight: 600;
-  line-height: 6rem;
-  height: 6rem;
-  border-radius: 16px;
-  color: var(--sp-green);
-  margin-bottom: 0.65rem;
-  padding: 0.625rem;
-  padding-top: 1rem;
-  transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-
-.countdownSection {
-  display: flex;
-  flex-direction: column;
+#days, #hours, #min, #sec {
+  box-shadow: 2px 2px 6px var(--sp-green);
+  text-align: center;
+  align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  transition: box-shadow 0.7s ease-in-out;
 }
 
-.countdownAmount {
-  background-color: var(--sp-input-bg-dark) !important;
-  box-shadow: var(--apple-box-shadow);
+.timePart {
+  display: flex;
+  padding-top: 1rem;
+  color: var(--sp-dark-gray);
+  font-weight: 500;
+  text-shadow: 0.5px 0.5px 3px var(--sp-green);
+  transition: color 0.7s ease-in-out, text-shadow 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
 
-#countdown:hover {
+#counters:hover #days {
+  box-shadow: 2px 2px 6px var(--fface-red); 
+}
+
+#counters:hover #hours {
+  box-shadow: 2px 2px 6px var(--fface-red); 
+}
+
+#counters:hover #min {
+  box-shadow: 2px 2px 6px var(--fface-red); 
+}
+
+#counters:hover #sec {
+  box-shadow: 2px 2px 6px var(--fface-red); 
+}
+
+#counters:hover .timePart {
+  color: var(--sp-dark);
+  text-shadow: 0.5px 0.5px 3px var(--fface-red);
   opacity: 0.2;
+}
+
+#counters:hover .countdownPeriod {
   color: var(--fface-red);
-}
-
-.dealsCountdown:hover .countdownSection:hover .countdownAmount:hover {
-  color: var(--fface-red);
-  box-shadow: var(--fface-red) 1px 1px 15px 0px;
-  opacity: 0.2;
-}
-
-.dealsCountdown  .countdownSection .countdownPeriod {
-  font-weight: 400;
-  line-height: 2.125rem;
-  color: #898a8a;
-}
-
-.dealsCountdown .countdownSection:last-child::before {
-  display: none;
-}
-
-.dealsCountdown .countdownSection {
-  width: 20%;
 }
 
 .countdownPeriod {
-  padding: 1rem 0rem;
-  line-height: 1.75rem;
-}
-
-#days, #hours, #minutes, #seconds {
-  color: #1cff28;
-  padding-bottom: 0;
-}
-
-#days:hover, #hours:hover, #minutes:hover, #seconds:hover {
-  color: var(--fface-red);
-  background-color: rgba(0, 0, 0, 0);
-}
-
-#days {
-  padding-left: 0.25rem;
-}
-
- #hours  {
-  padding-left: 0.2rem;
-}
-
-#seconds {
-  padding-left: 0.75rem;
-}
-
-#minutes {
-  padding-left: 0.5rem;
-}
-
-.time-part {
-  background-color: rgb(25, 25, 25) !important;
-  color: #1cff28;
-}
-
-.time-part:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
-  min-height: 8rem !important;
-  width: 7rem !important;
-}
-
-@media only screen and (min-width: 1400px) {
-  .dealsCountdown {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 16px;
-    padding: 4px 0px;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .countdownAmount .countdownSection .timePart {
-    background-color: var(--sp-input-bg-dark) !important;
-  }
-
-  #countdown:hover {
-    opacity: 0.2s;
-    color: var(--fface-red);
-  }
-
-  .dealsCountdown:hover .countdownSection:hover .countdownAmount:hover {
-    color: var(--fface-red);
-    box-shadow: var(--fface-red) 1px 1px 15px 0px;
-    opacity: 0.2;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .dealsCountdown {
-    flex-direction: column;
-    padding: 2px 0px;
-  }
-
-  .dealsCountdown .countdownSection {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .countdownAmount {
-    font-size: 1.25rem;
-    line-height: 4rem;
-    height: 4rem;
-  }
-
-  .countdownPeriod {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .dealsCountdown {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 16px;
-    padding: 4px 0px;
-    width: 100%;
-    margin: auto;
-    max-width: 100%;
-  }
-
-  .countdownAmount .countdownSection .timePart {
-    background-color: var(--sp-input-bg-dark) !important;
-  }
-}
-
-.div {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: var(--sp-green);
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 4px #000000;
+  transition: color 0.7s ease-in-out;
 }
 
-@media only screen and (max-width: 500px) {
-  .div {
-    flex-direction: column;
+@media only screen and (max-width: 395px) {
+  .countdownPeriod {
+    font-size: 0.75rem;
+  }
+
+  #counters {
+    column-gap: 0.25rem;
+    width: 100%;
+  }
+
+  #days, #hours, #min, #sec {
+    border-radius: 15px;
   }
 }
+
+@media only screen and (min-width: 425px) {
+  #counters {
+    width: 100%;
+  }
+}
+
+/*@media only screen and (max-width: 395px) {
+  #bigMin, #bigSec {
+    display: none;
+  }
+
+  #smallMin, #smallSec {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 394px) {
+  #bigMin, #bigSec {
+    display: flex;
+  }
+
+  #smallMin, #smallSec {
+    display: none;
+  }
+}*/
+

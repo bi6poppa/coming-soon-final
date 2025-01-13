@@ -78,12 +78,12 @@ const NotifyBtn = ({ email }) => {
 
   return (    
     <button
-      className="btn "
+      className="btn px-3 py-3 text-nowrap"
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
       onClick={handleClick}
       style={buttonStyle}
-      id={styles.notify}
+      id={styles.notifyBtn}
     >
       Notify Me
         <i className="bi bi-arrow-right ps-2" style={iconStyle} id={styles.icon}/>

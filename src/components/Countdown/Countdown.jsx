@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
-import Stack from 'react-bootstrap/Stack'
-import styles from '@components/Countdown/Countdown.module.css'
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Stack from 'react-bootstrap/Stack'
+
+import styles from './Countdown.module.css'
 
 const msInSecond = 1000
 const msInMinute = 60 * 1000
@@ -38,32 +41,26 @@ const Countdown = (endDateTime) => {
   const timeParts = getPartsofTimeDuration(timeDif)
 
   return (
-    <>
-      <Stack className={`${styles.dealsCountdown} d-flex justify-content-start container-fluid my-2`} direction="horizontal" gap={2}>
-        <div className={styles.div}>
-          <Container className="d-flex p-0 " fluid>
-            <div className={`${styles.countdownSection} container-fluid`}>
-              <span className={`${styles.countdownAmount} fs-1 lh-16 ${styles.timePart}`}>{timeParts.days}</span>
-              <span className={`${styles.countdownPeriod} lh-14 font-xs`} id={styles.days}> days </span>
-            </div>
-            <div className={`${styles.countdownSection} container-fluid`}>
-              <span className={`${styles.countdownAmount} fs-1 lh-16 ${styles.timePart}`}>{timeParts.hours}</span>
-              <span className={`${styles.countdownPeriod} lh-14 font-xs`} id={styles.hours}> hours </span>
-            </div>
-          </Container>
-          <Container className="d-flex p-0" fluid>
-            <div className={`${styles.countdownSection} container-fluid`}>
-              <span className={`${styles.countdownAmount} fs-1 lh-16 ${styles.timePart}`}>{timeParts.minutes}</span>
-              <span className={`${styles.countdownPeriod} lh-14 font-xs`} id={styles.minutes}> minutes </span>
-            </div>
-            <div className={`${styles.countdownSection} container-fluid`}>
-              <span className={`${styles.countdownAmount} fs-1 lh-16 ${styles.timePart}`}>{timeParts.seconds}</span>
-              <span className={`${styles.countdownPeriod} lh-14 font-xs`} id={styles.seconds}> seconds </span>
-            </div>
-          </Container>
-        </div>
-      </Stack>
-    </>
+    <Container className="d-flex justify-content-center align-items-center pt-2" id="styles.countdown" fluid>
+      <Row id={styles.counters}>
+        <Col className={`d-flex flex-column align-items-center ${styles.countCol} p-0 m-0`} id={styles.days}>
+          <Row className={`${styles.countdownAmount} fs-1 lh-1 ${styles.timePart}`}>{timeParts.days}</Row>
+          <Row className={`${styles.countdownPeriod} ${styles.day}`}>days</Row>  
+        </Col>
+        <Col className={`d-flex flex-column align-items-center ${styles.countCol} p-0 m-0`} id={styles.hours}>
+          <Row className={`${styles.countdownAmount} fs-1 lh-1 ${styles.timePart}`}>{timeParts.hours}</Row>
+          <Row className={`${styles.countdownPeriod} font-xs ${styles.hour}`}>hours</Row>
+        </Col>
+        <Col className={`d-flex flex-column align-items-center ${styles.countCol} p-0 m-0`} id={styles.min}>
+          <Row className={`${styles.countdownAmount} fs-1 lh-1 ${styles.timePart}`}>{timeParts.minutes}</Row>
+          <Row className={`${styles.countdownPeriod} font-xs ${styles.mins}`} id={styles.bigMin}>minutes</Row>
+        </Col>
+        <Col className={`d-flex flex-column align-items-center ${styles.countCol} p-0 m-0`} id={styles.sec}>
+          <Row className={`${styles.countdownAmount} fs-1 lh-1 ${styles.timePart}`}>{timeParts.seconds}</Row>
+          <Row className={`${styles.countdownPeriod} font-xs ${styles.secs}`} id={styles.bigSec}>seconds</Row>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

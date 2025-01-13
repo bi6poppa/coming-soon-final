@@ -1,4 +1,4 @@
-#footer {
+/*#footer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7,4 +7,61 @@
   margin: 0px;
   padding: 0px 1rem;
   flex-shrink: 1;
+}*/
+
+#footer {
+  margin: 0;
+  padding: 0rem 0.5rem;
+  color: var(--sp-med-gray)
+}
+
+#bizName {
+  padding-top: 0.5rem;
+  line-height: 1rem;
+}
+
+#footLogo {
+  height: 4.25rem;
+}
+
+#bizInfo {
+  line-height: 1.5rem;
+}
+@keyframes easeInDissolveOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+#footLogo:hover {
+  filter: brightness(1.5);
+  font-size: 1.25rem;
+  line-height: 3rem;
+  color: var(--fface-red);
+  text-shadow: 0px 0px 3px var(--sp-light);
+  animation: easeInDissolveOut 3s forwards;
+}
+
+#footer:hover #bizName {
+  color: var(--sp-green);
+}
+
+@media only screen and (max-width: 424px) {
+  #bizInfo, #bizName {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
+
+  #bizName {
+    padding-top: 0.5rem;
+  }
 }

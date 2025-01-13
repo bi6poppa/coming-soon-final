@@ -1,25 +1,4 @@
-#notify {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#notify, #icon {
-  font-size: 1.25rem;
-}
-
-#icon {
-  color: var(--sp-green);
-}
-
-@media only screen and (max-width: 425px) {
-  button {
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (min-width: 426px) {
-  button {
-    font-size: 1.5rem;
-  }
+#notifyBtn {
+  margin: 0;
+  padding: 0;
 }
