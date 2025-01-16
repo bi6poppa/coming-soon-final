@@ -18,6 +18,7 @@ function App() {
     <>  
         <Container className="p-0 m-0" fluid>
             <CSHeader />
+            <Row className="blankRows"><br className="blankRows" /></Row>
             <Row className="p-0" id="row">
                 <Col className="p-0 m-0 col-md-6">
                     <h1 id="website">Our new website<br />is on its way.</h1>
@@ -30,6 +31,7 @@ function App() {
                     <Clock />
                 </Col>
             </Row>
+            <Row className="blankRows"><br className="blankRows" /></Row>
             <CSFooter />
         </Container>
     </>
