@@ -1,8 +1,10 @@
 {
 	"folders": [
 		{
-			"name": "coming-soon",
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "requestForm"
+	}
 }
